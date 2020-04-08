@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器</title>
+    <style type="text/css">
+        /*并列选择器:多个选择器使用的是相同的样式*/
+        #s1,#d1 {
+            color: blue;
+        }
+
+        /*层级选择器：必须符合层次结构才能匹配*/
+        #d2 span {
+            color: red;
+        }
+
+        /*根据属性进行选择*/
+        input[type="text"] {
+            color: blue;
+        }
+        input[value="admin"] {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="s1">啦啦啦</span>
+    <div id="d1">噜噜噜</div>
+    <div id="d2">
+        <span>java目前是世界上第一语言</span>
+        <span>java目前是世界上第一语言</span>
+    </div>
+    <span>javascript也是很好的语言</span>
+    <hr />
+    <input type="text" value="admin"><br />
+    <input type="password" value="1234"><br />
+    
+</body>
+
+</html>

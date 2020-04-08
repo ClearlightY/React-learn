@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>三个或多个层重叠实现互相切换</title>
+</head>
+<body>
+<div id="aaa" style="position:absolute;left:100px;top:100px;width:100px;height:100px;background-color:#ddeeff;z-index:1;" onclick="moveUp(this.id)"></div>
+<div id="bbb" style="position:absolute;left:150px;top:130px;width:100px;height:100px;background-color:#eeffdd;z-index:2;" onclick="moveUp(this.id)"></div>
+<div id="ccc" style="position:absolute;left:200px;top:160px;width:100px;height:100px;background-color:#ffddee;z-index:3;" onclick="moveUp(this.id)"></div>
+<script type="text/javascript">
+var divNo = document.getElementsByTagName("div").length;
+console.log(divNo);
+function moveUp(id)
+{
+divNo++;
+var box = document.getElementById(id);
+box.style.zIndex=divNo;
+}
+</script>
+</body>
+</html>
