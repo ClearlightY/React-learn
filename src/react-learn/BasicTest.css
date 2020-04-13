@@ -1,0 +1,14 @@
+.basic {
+    width: 58px;
+    height: 25px;
+    background: #FCF1DF;
+    text-align: center;
+    padding-top: 3px;
+    float: inherit
+}
+
+.basic_content {
+    width:300px;
+    height: 120px;
+    background: #E0D4C6;
+}
